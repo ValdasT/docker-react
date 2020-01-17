@@ -6,8 +6,8 @@ WORKDIR /app
 #Copy package.json file from current directory to container main folder
 COPY ./package.json ./
 # Download and install a dependency
-# RUN npm install
-RUN npm i -f
+RUN npm install
+# RUN npm i -f
 #Copy all files from current directory to container main folder
 COPY ./ ./
 
